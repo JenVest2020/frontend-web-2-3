@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+}
+
+.saved{
+  width: 50%;
+  margin:2%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border:2px ridge #833b01;
+}
+
+.link {
+  color: #833b01;
+}
+
+.search{
+  width: 50%;
+  margin:2%;
+  display:flex;
+  flex-direction: column;
+  border:2px ridge #833b01;
+}
+
+.home{
+  display:flex;
+}
+.heading {
+  background-color: #f35a01;
+}
+.addform{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+  margin: 0 auto;
+  border: 1px solid black;
+
+}
+.form{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 3%;
+}
+.label{
+  font-weight: bold;
+  margin-top:1%;
+}
+.btn{
+  font-weight: bold;
+  background-color:rgb(177,224,132);
+  border: 2px ridge #833b01;
+  margin:2%;
+}
+
+.regForm {
+  width:55%;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin: 3%;
+}
+
+.reglabel {
+  font-weight: bold;
+  background-color: #f35a01;
+}
+
+input {
+  border: 2px ridge #833b01;
+}
+
+.eventHeader{
+  display:flex;
+  margin:2%
+}
+
+.select{
+  width: 35%;
+  margin: 0 auto;
+}
+
+.bevForm {
+  width:30%;
+}
+
+.foodForm {
+  width:30%;
+}
+
+.desForm {
+  width: 30%;
+}
+
+.bring {
+  width:90%;
+  margin: 0 auto;
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 2px ridge #833b01;
+}
+
+.bringHeader {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f35a01;
+  border: 2px ridge #833b01;
+}
+
+
+
