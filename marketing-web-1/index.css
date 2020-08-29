@@ -1,0 +1,252 @@
+/* CSS RESET BELOW */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  CHAD CSS STYLE */
+
+/* GLOBAL */
+* html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.5rem/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    background-color: #f4f4f4;
+    width: 90%;
+    margin: 0 auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* HEADER */
+header {
+    background: #070707;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 60px;
+}
+.headerContainer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{    
+    padding: 0 20px 0 20px;
+}
+
+header .headerContainer h1{
+    margin: 0.5rem;
+    font-size: 2rem;
+}
+header nav{
+   margin-top: 10px;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+/* MAIN CONTENT */
+#mainContent {
+    min-height: 20rem;
+    text-align: center;
+    background-color: #b1e084;
+}
+#mainContent h1{
+    margin-top: 2rem;
+    font-size: 4.7rem;
+    margin-bottom: 3rem;
+}
+#mainContent p{
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 2.5rem 2.5rem;
+}
+#mainContent a{
+    color: #eeeeee;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #188f00;
+    border: .5rem ridge #188f00;
+}
+
+#mainContent li{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+}
+
+.photoContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    text-align: center;
+}
+
+.photo img {
+    width: 300px;
+    height: auto;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    color: #ffffff;
+    background-color: #070707;
+    margin-bottom: 1rem;  
+}
+.newsletter input[type='email']{
+    padding: .04rem;
+    height: 2.4rem;
+    width: 20rem;
+    font-size: 1.5rem;
+}
+
+.button_1 {
+    font-size: 1.5rem;
+    height: 2.8rem;
+    background: #188f00;
+    border: .5rem ridge #188f00;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #ffffff;
+}
+
+/* FOOTER */
+footer{
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #070707;
+    background-color: #b1e084;
+    text-align: center;
+    min-height: 5px;
+}
+footer p{
+    font-size: 20px;
+    /* get text in center vertically */
+}
+
+/* MEDIA BREAKS */
+@media (max-width: 1050px){
+    body{
+        width: 95%;
+    }
+    header a{
+        font-size: 14px;
+    }
+    header #branding h1{
+        font-size: 90%;
+    }
+    header nav{
+        margin-top: 1px;
+    }
+    #mainContent h1{
+        font-size: 3.8rem;
+    }
+    #mainContent p{
+        font-size: 1.3rem;
+        margin: 1.5rem 1.5rem;
+    }
+    
+    .newsletter{
+        flex-direction: column;
+        text-align: center;
+    }
+    .newsletter h1{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .newsletter input[type='email']{
+        width: 28rem;
+    }
+    .photoContainer{
+        flex-direction: column;
+    }
+    .photoContainer img{
+        width: 55%;
+    }
+}
+@media (max-width: 790px){
+    #mainContent h1{
+        font-size: 3.3rem;
+    }
+    #mainContent p{
+        font-size: 1rem;
+    }
+    header #branding h1{
+        font-size: 80%;
+    }
+    .photoContainer img{
+        width: 70%;
+    }
+    .newsletter h1 {
+        font-size: 2rem;
+    }
+    .newsletter input[type='email']{
+        width: 18rem;
+    }
+    .button_1 {
+        margin-top: 1rem;
+    }
+}
