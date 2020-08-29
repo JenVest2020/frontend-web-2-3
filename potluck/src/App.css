@@ -29,7 +29,7 @@
   display:flex;
 }
 .heading {
-  background-color: #f35a01;
+  background-image:linear-gradient(#f35a01,rgb(177,224,132),#f9af01);
 }
 .addform{
   display:flex;
@@ -58,22 +58,33 @@
 }
 
 .regForm {
-  width:55%;
-  margin: 0 auto;
+  width:90%;
   display:flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-end;
+  align-items: center;
   margin: 3%;
 }
 
 .reglabel {
+  width: 50%;
   font-weight: bold;
-  background-color: #f35a01;
+  background-image:linear-gradient(#f35a01,rgb(177,224,132),#f9af01);
+}
+
+.reglabelEmail {
+  width: 50%;
+  font-weight: bold;
+  background-color: #f9af01;
+}
+
+.regInput {
+  border: 2px ridge rgb(177,224,132);
+  align-self: flex-end;
 }
 
 input {
-  border: 2px ridge #833b01;
+  border: 2px ridge rgb(177,224,132);
 }
 
 .eventHeader{

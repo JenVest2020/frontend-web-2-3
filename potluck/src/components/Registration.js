@@ -116,6 +116,7 @@ function Registration(props) {
       <label className='reglabel' htmlFor="name">
         Name
         <input
+        className='regInput'
           type="text"
           name="name"
           value={formState.name}
@@ -127,9 +128,10 @@ function Registration(props) {
         ) : null}
       </label>
 
-      <label className='reglabel' htmlFor="email">
+      <label className='reglabelEmail' htmlFor="email">
         Email
         <input
+        className='regInput'
           type="email"
           name="email"
           value={formState.email}
@@ -144,6 +146,7 @@ function Registration(props) {
       <label className='reglabel' htmlFor="username">
         Username
         <input
+        className='regInput'
           type="text"
           name="username"
           value={formState.username}
@@ -155,9 +158,10 @@ function Registration(props) {
         ) : null}
       </label>
 
-      <label className='reglabel' htmlFor="password">
+      <label className='reglabelEmail' htmlFor="password">
         Password
         <input
+        className='regInput'
           type="password"
           name="password"
           value={formState.password}

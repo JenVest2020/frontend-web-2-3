@@ -84,7 +84,7 @@ function Login(props) {
     <>
       <h1 className='heading'>Log In</h1>
       <form onSubmit={onSubmit}>
-        <label htmlFor="username">
+        <label className='reglabelEmail' htmlFor="username">
           Username
         <input
             type="text"
@@ -98,7 +98,7 @@ function Login(props) {
           ) : null}
         </label>
 
-        <label htmlFor="password">
+        <label className ='reglabelEmail' htmlFor="password">
           Password
         <input
             type="password"
